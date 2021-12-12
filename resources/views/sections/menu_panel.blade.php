@@ -30,10 +30,6 @@
                                 <ul class="nav child_menu" style="display: block">
                                     <li><a href="home">Inicio</a>
                                     </li>
-                                    <!--<li>
-                                        <a data-toggle="modal" href="#statistiques">Estadisticas</a>
-                                    </li>
-                                    -->
                                 </ul>
                             </li>
                         </ul>
