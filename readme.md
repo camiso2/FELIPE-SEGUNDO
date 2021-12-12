@@ -20,3 +20,10 @@ Tecnologías Usadas
 * back-end  : PHP->Laravel 5.6
 * front-end : HTML5, CSS3, Bootstrap 4, js puro, JQuery
 
+Desarrollado
+Jaiver Andrés Ocampo Oviedo
+Full Stack
+Contacto : 3174885954
+Junio de 2021
+
+
