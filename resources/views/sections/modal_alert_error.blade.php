@@ -7,22 +7,16 @@
 				<div style="">
 					<img src="/images/logo.png" alt="" class="fox" width="55%"><hr style="background-color: white">
 				</div>
-
 				<br>
-				<h2 class="confirm">{{ session('alert_error') }}</h2>	
-			
-				
+				<h2 class="confirm">{{ session('alert_error') }}</h2>
 				<button type="button" class="btn btn-ttc btn-style" style="background-color: #BD3247" onclick="moverseA()" >MODIFICAR DATOS</button>
-
 				<script type="text/javascript">
 					function moverseA() {
 						location.hash = "#" + "form";
 						$('#alert_error').modal('hide')
 					}
 				</script>
-
 			</div>
-			
 		</div>
 	</div>
 </div>
