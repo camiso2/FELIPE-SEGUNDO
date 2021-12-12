@@ -7,54 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" value="notranslate">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    {{--  Scripts 
-        <script src="{{ asset('js/app.js') }}" defer></script>--}} 
-
+    {{--  Scripts
+        <script src="{{ asset('js/app.js') }}" defer></script>--}}
         <!-- Bootstrap core CSS -->
-
         <link href="/panel/css/bootstrap.min.css" rel="stylesheet">
-
         <link href="/panel/fonts/css/font-awesome.min.css" rel="stylesheet">
         <link href="/panel/css/animate.min.css" rel="stylesheet">
-
         <!-- Custom styling plus plugins -->
         <link href="/panel/css/custom.css" rel="stylesheet">
-
         <link href="/panel/css/icheck/flat/green.css" rel="stylesheet" />
         <link href="/panel/css/floatexamples.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="/panel/js/jquery.min.js"></script>
         <script src="/panel/js/nprogress.js"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             NProgress.start();
         </script>
-
     <!--[if lt IE 9]>
         <script src="../assets/js/ie8-responsive-file-warning.js"></script>
     <![endif]-->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-
-      
-
-
-
   </head>
-
-
   <body class="nav-md">
 
     @if (session('alert_error'))
@@ -67,21 +49,12 @@
 @include('sections.modal_profile')
 @endif
 
-
-
-
 @include('sections.menu_panel')
 <!-- page content -->
 <div class="right_col" role="main">
-
     @include('sections.preload')
-
     <!-- top tiles -->
     <div class="row tile_count">
-
-
-
-
          @if (count($participants)<=0)
             <div class="animated flipInY col-md-2 col-sm-4 col-xs-4 tile_stats_count">
             <div class="left"></div>
@@ -117,16 +90,9 @@
             </div>
         </div>
          @endif
-       
-
-
     </div>
     <!-- /top tiles -->
-
     <div class="row">
-
-
-
        <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
@@ -134,7 +100,6 @@
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
-
                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                     </li>
                 </ul>
@@ -150,23 +115,19 @@
                         <i class="fa fa-trash fa-2x" aria-hidden="true" style="color: white !important;"></i>&nbsp;&nbsp;{{ session('participant') }}
                     </div>
                     @endif
-
                     <p>Los Participantes <code>Cumplen</code> con todos los requisitos para el sorteo !</p>
                     <script src="/panel/js/buscador.js"></script>
                     <div class="title_right" style="padding-top: 5px;">
                         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                           <form  align ="left" id="form__" name="buscador" method="post" action="{{ $_SERVER['PHP_SELF'] }}" onKeypress="if(event.keyCode == 13) event.returnValue = false;" > 
+                           <form  align ="left" id="form__" name="buscador" method="post" action="{{ $_SERVER['PHP_SELF'] }}" onKeypress="if(event.keyCode == 13) event.returnValue = false;" >
                               <div class="input-group">
                                 <input type="text" class="form-control"  value=""  id="buscar_employee" name="buscar" placeholder=" &#xf044; Buscar Participante" onkeyup="buscarItem(this.id)" style="font-family:Arial, FontAwesome">
                                 <span class="input-group-btn">
                                   <button class="btn btn-default" type="button">Go!</button>
                               </span>
                           </div>
-
                       </form>
                   </div>
-
-
                   <table id="buscar_employees" class="table table-striped responsive-utilities jambo_table bulk_action" >
                     <thead>
                         <tr class="headings">
@@ -182,20 +143,14 @@
                             <th class="column-title" >Recibo</th>
                             <th class="column-title" >Veri...</th>
                             <th class="column-title" >Inscripción</th>
-
                             <th class="column-title " style="width: 1%;font-size: 18px;"><span class="nobr"><i class="fa fa-trash"></i></span>
                             </th>
-
                         </tr>
                     </thead>
-
                     <tbody>
-
                         @foreach ($participants as $p)
                         @if ($p->state == null)
                         <tr class="even pointer" >
-                           {{--   <td class="a-center "><a href="data_users/{{ $p->fper }}"><img src="data_users/{{ $p->fper }}" class="img-resposive" width="40px;" id="silverfox" ></a>
-                            --}}
                             <td class="cv " ><a href="data_users/{{ $p->fper }}" target="_blank"><p style="width: 90px !important" data-toggle="tooltip" title="Nº : {{ $p->recibo }}">VER RECIBO</p></a>
                             </td>
                             <td class="cv" ><p data-toggle="tooltip" title="{{ $p->nacimiento }}">{{ $p->nacimiento }}</p></td>
@@ -210,29 +165,22 @@
                             <td class="cv">
                                <script type="text/javascript">
                                 $(document).ready(function(e){
-                                    $('[data-toggle="tooltip"]').tooltip(); 
+                                    $('[data-toggle="tooltip"]').tooltip();
                                 });
                             </script>
-
                             <form class="form-horizontal" method="POST" action="{{ route('deleted_participants') }}"  onsubmit="return preload()" autocomplete="off">
                                 {{ csrf_field() }}
-
                                 <input type="hidden" name="id" value="{{ $p->id }}">
                                 <input type="hidden" name="nombres" value="{{ $p->nombres }}">
                                 <button type="submit" class="btn btn-danger btn-xs" onclick="
-                                return confirm('Esta SEGURO que desea borrar el participante de su lista?')" 
+                                return confirm('Esta SEGURO que desea borrar el participante de su lista?')"
                                 ><i class="fa fa-trash"></i></button>
-
                             </form>
                         </td>
                     </tr>
-
                     @endif
-
                     @endforeach
-
                 </tbody>
-
             </table>
         </div>
         @endif
@@ -240,30 +188,19 @@
 </div>
 </div>
 @include('sections.footer')
-
 </div>
-
-
 <div class="clearfix"></div>
-
 <br />
-
-
-
-
 <div id="custom_notifications" class="custom-notifications dsp_none">
     <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
     </ul>
     <div class="clearfix"></div>
     <div id="notif-group" class="tabbed_notifications"></div>
 </div>
-
 <script src="/panel/js/bootstrap.min.js"></script>
-
 <!-- gauge js -->
 <script type="text/javascript" src="/panel/js/gauge/gauge.min.js"></script>
 <script type="text/javascript" src="/panel/js/gauge/gauge_demo.js"></script>
-
 <!-- bootstrap progress js -->
 <script src="/panel/js/progressbar/bootstrap-progressbar.min.js"></script>
 <script src="/panel/js/nicescroll/jquery.nicescroll.min.js"></script>
@@ -272,43 +209,11 @@
 <!-- daterangepicker -->
 <script type="text/javascript" src="/panel/js/moment.min.js"></script>
 <script type="text/javascript" src="/panel/js/datepicker/daterangepicker.js"></script>
-
 <script src="/panel/js/custom.js"></script>
-
-
-
-
 <script>
     NProgress.done();
 </script>
 <!-- /datepicker -->
 <!-- /footer content -->
 </body>
-
 </html>
-
-
-{{--  @extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
---}}
