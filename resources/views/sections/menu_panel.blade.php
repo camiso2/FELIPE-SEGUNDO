@@ -1,16 +1,11 @@
 <div class="container body">
-
-
     <div class="main_container">
-
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
-
                 <div class="navbar nav_title" style="border: 0;">
                     <a href="#" class="site_title"><i class="fa fa-check"></i> <span>Sorteo {{ config('app.name', 'Laravel') }}</span></a>
                 </div>
                 <div class="clearfix"></div>
-
                 <!-- menu prile quick info -->
                 <div class="profile">
                     <div class="profile_pic">
@@ -22,13 +17,10 @@
                     </div>
                 </div>
                 <!-- /menu prile quick info -->
-
                 <br />
                 <hr />
-
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-
                     <div class="menu_section">
                         <br>
                         <h3><br><hr>General</h3>
@@ -44,13 +36,10 @@
                                     -->
                                 </ul>
                             </li>
-
                         </ul>
                     </div>
-
                 </div>
                 <!-- /sidebar menu -->
-
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
                     <a data-toggle="tooltip" data-placement="top" title="Settings">
@@ -69,16 +58,13 @@
                 <!-- /menu footer buttons -->
             </div>
         </div>
-
         <!-- top navigation -->
         <div class="top_nav">
-
             <div class="nav_menu">
                 <nav class="" role="navigation">
                     <div class="nav toggle">
                         <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                     </div>
-
                     <ul class="nav navbar-nav navbar-right" >
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="width: 200px;"><span style="width: 230px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">
@@ -88,7 +74,6 @@
                             <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
                                 <li>
                                    <a data-toggle="modal" href="#profile">Perfil</a>
-
                                </li>
                                <li>
                                 <a href="javascript:;">
@@ -108,9 +93,6 @@
                         </li>
                     </ul>
                 </li>
-
-
-
             </ul>
         </nav>
     </div>
