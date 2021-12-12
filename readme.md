@@ -21,9 +21,9 @@ Tecnologías Usadas
 * front-end : HTML5, CSS3, Bootstrap 4, js puro, JQuery
 
 Desarrollado
-Jaiver Andrés Ocampo Oviedo
-Full Stack
-Contacto : 3174885954
-Junio de 2021
+* Jaiver Andrés Ocampo Oviedo
+* Full Stack
+* Contacto : 3174885954
+* Junio de 2021
 
 
