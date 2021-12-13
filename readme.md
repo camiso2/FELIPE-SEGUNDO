@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## Sorteo Felipe Segundo
+=======
+Sorteo Felipe Segundo (II)
+>>>>>>> 8e32ebfcd52b3cd02e96df22f892d0394ea626b1
 
 Sistema desarrollado para cliente europeo Felipe Segundo (II)
 
@@ -24,6 +28,6 @@ Desarrollado
 * Jaiver Andrés Ocampo Oviedo
 * Full Stack
 * Contacto : 3174885954
-* Junio de 2021
+* Junio de 2021..
 
 
