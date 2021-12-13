@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-## Sorteo Felipe Segundo
-=======
-Sorteo Felipe Segundo (II)
->>>>>>> 8e32ebfcd52b3cd02e96df22f892d0394ea626b1
+## Sorteo Felipe Segundo (II)
+
 
 Sistema desarrollado para cliente europeo Felipe Segundo (II)
 
